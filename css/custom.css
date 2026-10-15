@@ -60,9 +60,8 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-  background-image: url("/images/bg.jpg"), linear-gradient(135deg, #e0eafc, #cfdef3);
-  background-size: cover;
-  background-position: center;
+  background-color: #f4f4f4;
+  background-image: none;
   background-attachment: fixed;
 }
 
