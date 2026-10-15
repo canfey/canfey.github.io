@@ -58,3 +58,40 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
   background: #ff5722;
 }
+
+body {
+  background-image: url("/images/bg.jpg"), linear-gradient(135deg, #e0eafc, #cfdef3);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#wrap {
+  background: transparent;
+}
+
+.article-inner,
+.widget {
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    background-image: none;
+    color: #ccc;
+  }
+
+  .article-inner,
+  .widget {
+    background: rgba(40, 40, 40, 0.78) !important;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #ccc;
+  }
+
+  .widget {
+    text-shadow: none;
+  }
+}
